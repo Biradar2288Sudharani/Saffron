@@ -81,7 +81,7 @@
 /* Placement Section Styling */
         .placement-section {
             max-width: 500rem;
-            height: 40rem;
+            height: 31rem;
             margin: 40px auto;
             padding: 40px;
             border-radius: 15px;
@@ -140,7 +140,7 @@
         /* Image size + center */
         .swiper-slide img {
             width: 40rem;
-            height: 25rem;
+            height: 20rem;
             object-fit: cover;
             border-radius: 12px;
             display: block;
@@ -264,4 +264,178 @@
     font-size: 14px;
     line-height: 1.5;
 }
-/* Autoscroll images css */
+
+/* Course Overview Section CSS */
+.program-section {
+    padding: 5px 0;
+    background: #fff;
+}
+
+.program-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.program-card {
+    width: 360px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+
+.tag {
+    padding: 4px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+.offline {
+    background: #ffe7ea;
+    color: #d1002c;
+}
+
+.online {
+    background: #ffefe1;
+    color: #ff7a00;
+}
+
+.program-title {
+    font-size: 20px;
+    margin: 10px 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+.program-info {
+    display: flex;
+    gap: 25px;
+    margin: 10px 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+.program-text {
+    font-size: 14px;
+    margin: 10px 15px 20px;
+    color: #555;
+}
+
+.view-btn {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    padding: 10px 0;
+    background: #ffffff;
+    border: 2px solid #ff007f;
+    color: #ff007f;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.view-btn:hover {
+    background: #ff007f;
+    color: #fff;
+}
+.course-overview-title {
+    text-align: center;
+    font-size: 45px; 
+    font-weight: 700;
+    color: #000; /* Course is black */
+}
+
+.pink-text {
+    color: #ff007f; /* Overview in pink */
+}
+
+/* Our Aluminy Section CSS Code */
+.alumni-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.alumni-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ff0080; /* pink title */
+}
+
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px;
+}
+
+.alumni-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.alumni-card:hover {
+    transform: scale(1.05);
+}
+
+.alumni-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%; /* circle image */
+    margin-bottom: 12px;
+}
+
+.alumni-card h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #000;
+}
+
+.alumni-card p {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #000;
+    
+}
+.alumni-title {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;   /* ⭐ Forces one line */
+    display: inline-block;
+    width: 100%;
+}
+
+.alumni-title span {
+    color: #000; /* Our = black */
+}
+
+.alumni-title .pink {
+    color: #ff0080; /* Alumni = pink */
+}
