@@ -41,25 +41,6 @@ document.querySelectorAll(".nav-item.dropdown").forEach(function(drop){
 });
 
 
-// placement
-// // Swiper Auto Carousel for Placement Partners
-var swiper = new Swiper(".partnersSlider", {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-        delay: 1200,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        320: { slidesPerView: 2 },
-        480: { slidesPerView: 3 },
-        768: { slidesPerView: 4 },
-        1024: { slidesPerView: 5 }
-    }
-});
 
+closeModal.onclick = () => modal.style.display = "none";
+modal.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };

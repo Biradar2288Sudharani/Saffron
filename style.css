@@ -79,59 +79,133 @@
 }
 
 /* Placement Section Styling */
-.placement-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 40px;
-    border-radius: 15px;
-    border: 1px solid #e5e5e5;
-    background: #fff;
-}
+        .placement-section {
+            max-width: 500rem;
+            height: 40rem;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #e5e5e5;
+            background: transparent;
+            position: relative;
+        }
 
-.subtitle {
-    font-size: 15px;
-    color: #007b8f;
-    margin-bottom: 25px;
-}
+        /* Background Image */
+        .bg-carousel {
+            background-image: url("./images/lab8.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
 
-/* Swiper container */
-.partnersSlider {
-    width: 100% !important;
-    padding-bottom: 40px;
-}
+        /* White overlay */
+        .bg-carousel::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(3px);
+            border-radius: 15px;
+            z-index: 1;
+        }
 
-/* Each Slide */
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .bg-carousel * {
+            position: relative;
+            z-index: 2;
+        }
 
-/* Logo Images */
-.swiper-slide img {
-    width: 150px;
-    height: 120px;
-    object-fit: cover;   /* fills the box */
-    border-radius: 5px;
-}
+        .subtitle {
+            font-size: 15px;
+            color: #007b8f;
+            margin-bottom: 25px;
+        }
 
+         
 
-.swiper-slide img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.05);
-}
+        /* Swiper Slider */
+        .partnersSlider {
+            width: 100%;
+            padding-bottom: 40px;
+        }
 
-/* Pagination Dots */
-.swiper-pagination-bullet {
-    background: #b5b5b5;
-    opacity: 0.8;
-}
+        /* FORCE ONLY ONE SLIDE */
+        .swiper-slide {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.swiper-pagination-bullet-active {
-    background: #027c86;
-    opacity: 1;
-}
+        /* Image size + center */
+        .swiper-slide img {
+            width: 40rem;
+            height: 25rem;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+            margin: auto;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
 
+        .swiper-slide img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Pagination Dots */
+        .swiper-pagination-bullet {
+            background: #777;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #027c86;
+        }
+
+        /* POPUP MODAL */
+        .img-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 9999;
+
+            /* Centering */
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 12px;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .swiper-slide img {
+                width: 18rem;
+                height: 14rem;
+            }
+        }
+
+        @media(max-width: 480px) {
+            .swiper-slide img {
+                width: 14rem;
+                height: 12rem;
+            }
+        }
 
 
 /* ===========================================
