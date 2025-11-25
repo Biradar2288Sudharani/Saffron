@@ -26,3 +26,17 @@ window.addEventListener("resize", () => {
 });
 
 
+
+
+document.querySelectorAll(".nav-item.dropdown").forEach(function(drop){
+    drop.addEventListener("mouseenter", function(){
+        let menu = drop.querySelector(".dropdown-menu");
+        if (menu) menu.classList.add("show");
+    });
+
+    drop.addEventListener("mouseleave", function(){
+        let menu = drop.querySelector(".dropdown-menu");
+        if (menu) menu.classList.remove("show");
+    });
+});
+
