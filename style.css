@@ -78,6 +78,62 @@
     margin-bottom: 15px;
 }
 
+/* Placement Section Styling */
+.placement-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #007b8f;
+    margin-bottom: 25px;
+}
+
+/* Swiper container */
+.partnersSlider {
+    width: 100% !important;
+    padding-bottom: 40px;
+}
+
+/* Each Slide */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo Images */
+.swiper-slide img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;   /* fills the box */
+    border-radius: 5px;
+}
+
+
+.swiper-slide img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+    background: #b5b5b5;
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background: #027c86;
+    opacity: 1;
+}
+
+
+
 /* ===========================================
           🇮🇳 FULL TRICOLOR FOOTER
 =========================================== */

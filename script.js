@@ -27,7 +27,7 @@ window.addEventListener("resize", () => {
 
 
 
-
+// navbar dropdown
 document.querySelectorAll(".nav-item.dropdown").forEach(function(drop){
     drop.addEventListener("mouseenter", function(){
         let menu = drop.querySelector(".dropdown-menu");
@@ -38,5 +38,28 @@ document.querySelectorAll(".nav-item.dropdown").forEach(function(drop){
         let menu = drop.querySelector(".dropdown-menu");
         if (menu) menu.classList.remove("show");
     });
+});
+
+
+// placement
+// // Swiper Auto Carousel for Placement Partners
+var swiper = new Swiper(".partnersSlider", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 1200,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        320: { slidesPerView: 2 },
+        480: { slidesPerView: 3 },
+        768: { slidesPerView: 4 },
+        1024: { slidesPerView: 5 }
+    }
 });
 
