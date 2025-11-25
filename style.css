@@ -207,6 +207,172 @@
             }
         }
 
+/* ------------------ COMMON ------------------ */
+.section-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+.section-title span {
+    color: #e91e63;
+}
+
+
+/* ------------------ TESTIMONIALS ------------------ */
+
+/* ===========================
+/* ===========================
+   TESTIMONIALS SECTION
+=========================== */
+
+.testimonials-section {
+    padding: 60px 20px 80px;
+    background: white;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto 40px;
+}
+.section-title span {
+    color: #ff0066;
+}
+
+/* -----------------------
+   3 CARD GRID
+----------------------- */
+.testimonials-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* -----------------------
+   TESTIMONIAL CARD
+----------------------- */
+.testimonial-card {
+    background: #f3f3fc;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    transition: .3s ease;
+}
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+}
+
+/* Profile Image */
+.testimonial-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Review Text */
+.testimonial-text {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Name */
+.testimonial-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Company */
+.testimonial-company {
+    color: #ff0066;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* -----------------------
+   RESPONSIVE
+----------------------- */
+
+@media (max-width: 992px) {
+    .testimonials-container {
+        grid-template-columns: 1fr 1fr;   /* 2 cards on tablet */
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonials-container {
+        grid-template-columns: 1fr;       /* 1 card on mobile */
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* ------------------ ALUMNI SECTION ------------------ */
+
+.alumni-section {
+    padding: 50px 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.alumni-subtitle {
+    margin-left: 1rem;
+    color: #777;
+}
+
+.alumni-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+.alumni-logos img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(30%);
+    transition: 0.3s;
+}
+.alumni-logos img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+
+/* ------------- MOBILE RESPONSIVE -------------- */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+   
+    .alumni-logos {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+
 
 /* ===========================================
           🇮🇳 FULL TRICOLOR FOOTER
