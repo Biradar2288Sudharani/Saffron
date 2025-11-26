@@ -47,41 +47,10 @@
     background-color: #f1f1f1;
 }
 
-
-/* ===========================================
-            ABOUT US PAGE STYLING
-=========================================== */
-
-.about-section {
-    padding-top: 120px;
-    padding-bottom: 40px;
-    line-height: 1.8;
-}
-
-.section-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #004b73;
-}
-
-.sub-title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 25px;
-    color: #333;
-}
-
-.about-section p {
-    font-size: 17px;
-    color: #444;
-    margin-bottom: 15px;
-}
-
 /* Placement Section Styling */
         .placement-section {
-            max-width: 500rem;
-            height: 31rem;
+            width: 80rem;
+            height: 28rem;
             margin: 40px auto;
             padding: 40px;
             border-radius: 15px;
@@ -140,7 +109,7 @@
         /* Image size + center */
         .swiper-slide img {
             width: 40rem;
-            height: 20rem;
+            height: 15rem;
             object-fit: cover;
             border-radius: 12px;
             display: block;
@@ -207,6 +176,458 @@
             }
         }
 
+
+/* ===========================================
+            ABOUT US PAGE STYLING
+=========================================== */
+
+.about-section {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    line-height: 1.8;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #004b73;
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Pharmacy Graduate Section */
+.hero-section {
+    padding: 80px 10%;
+    background: #ffffff; 
+    /* margin-left: 3rem; */
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* LEFT SIDE */
+.hero-left {
+    flex: 1;
+}
+
+.badge-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.badge {
+    padding: 8px 16px;
+    background: #e8faff;
+    color: #0088aa;
+    font-size: 14px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0b1b3d;
+    margin-bottom: 20px;
+}
+
+.hero-title span {
+    color: #ffb84d;   /* Yellow like screenshot */
+}
+
+.hero-subtext {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    padding: 12px 22px;
+    background: #00a2e8;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-outline {
+    padding: 12px 22px;
+    border-radius: 25px;
+    border: 2px solid #00a2e8;
+    color: #00a2e8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* TAGS */
+.tag-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 8px 16px;
+    background: #f4f4f6;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* RIGHT CARD */
+.hero-card {
+    flex: 0.8;
+    background: #f8feff;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.08);
+}
+
+.hero-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #0b1b3d;
+}
+
+.hero-card ul {
+    margin-bottom: 20px;
+    padding-left: 18px;
+}
+
+.hero-card li {
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 15px;
+}
+
+.card-btn {
+    display: inline-block;
+    background: #00a2e8;
+    padding: 12px 22px;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .badge-row, .hero-buttons, .tag-row {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtext {
+        font-size: 15px;
+    }
+}
+
+
+/* MAIN SECTION */
+.hero-simple {
+    padding: 80px 10%;
+    background: #ffffff;
+}
+
+/* FLEX WRAPPER */
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* LEFT SIDE TEXT */
+.hero-left {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0b1b3d;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-title span {
+    color: #ffb84d;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+/* RIGHT SIDE TEXT CARD */
+.hero-right {
+    flex: 0.8;
+    padding: 35px;
+    background: #f8feff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
+}
+
+.right-title {
+    font-size: 1.5rem;
+    color: #0b1b3d;
+    margin-bottom: 15px;
+}
+
+.right-list {
+    padding-left: 18px;
+}
+
+.right-list li {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .hero-wrapper {
+        flex-direction: column;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .hero-description {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-right {
+        padding: 25px;
+    }
+}
+
+/* Cources Section */
+/* Section */
+.courses-section {
+    padding: 60px 10%;
+    background: #ffffff;
+}
+
+.courses-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #0b1b3d;
+    margin-bottom: 10px;
+}
+
+.courses-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+/* Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+/* Card */
+.course-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Badge */
+.course-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #e9f2ff;
+    color: #2563eb;
+    font-size: 13px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+/* Title */
+.course-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Description */
+.course-desc {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* Link */
+.course-link {
+    color: #0ea5e9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.course-link:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Why Section */
+/* Outer section spacing */
+.why-section {
+    padding: 60px 10%;
+}
+
+/* Big main card */
+.why-main-card {
+    background: white;
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Flex layout inside the main card */
+.why-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* LEFT CONTENT */
+.why-left {
+    flex: 2;
+}
+
+.why-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.why-list {
+    padding-left: 20px;
+}
+
+.why-list li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* RIGHT SMALL BOX (INSIDE MAIN CARD) */
+.ideal-box {
+    flex: 1;
+    background: #f8fbff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0px 5px 18px rgba(0,0,0,0.06);
+    height: fit-content;
+}
+
+.ideal-box h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.ideal-box ul {
+    padding-left: 20px;
+}
+
+.ideal-box ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .why-inner {
+        flex-direction: column;
+    }
+    
+    .ideal-box {
+        width: 100%;
+    }
+}
+
+
+
 /* ------------------ COMMON ------------------ */
 .section-title {
     font-size: 2.3rem;
@@ -221,118 +642,93 @@
 
 
 /* ------------------ TESTIMONIALS ------------------ */
-
-/* ===========================
-/* ===========================
-   TESTIMONIALS SECTION
-=========================== */
-
-.testimonials-section {
-    padding: 60px 20px 80px;
-    background: white;
+/* Section */
+.students-section {
+padding: 80px 10%;
+    background: #ffffff;
 }
 
-.section-title {
-    font-size: 2.4rem;
+.students-title {
+    font-size: 2.2rem;
     font-weight: 700;
-    text-align: left;
-    width: 90%;
-    margin: 0 auto 40px;
-}
-.section-title span {
-    color: #ff0066;
+    color: #0b1b3d;
+    margin-bottom: 5px;
 }
 
-/* -----------------------
-   3 CARD GRID
------------------------ */
-.testimonials-container {
-    width: 90%;
-    margin: auto;
+.students-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.students-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 30px;
 }
 
-/* -----------------------
-   TESTIMONIAL CARD
------------------------ */
-.testimonial-card {
-    background: #f3f3fc;
-    padding: 30px;
+/* Card */
+.students-card {
+    background: white;
     border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-    min-height: 260px;
+    padding: 20px 20px 30px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
     transition: .3s ease;
 }
-.testimonial-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+
+.students-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.12);
 }
 
-/* Profile Image */
-.testimonial-img {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
+/* Image */
+.students-img {
+    width: 100%;
+    height: 220px;
     object-fit: cover;
+    border-radius: 16px;
     margin-bottom: 15px;
-}
-
-/* Review Text */
-.testimonial-text {
-    font-size: 15px;
-    color: #333;
-    margin-bottom: 15px;
-    line-height: 1.6;
 }
 
 /* Name */
-.testimonial-name {
-    font-size: 16px;
-    font-weight: bold;
+.students-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
 }
 
 /* Company */
-.testimonial-company {
-    color: #ff0066;
-    font-size: 14px;
+.students-company {
+    font-size: 15px;
+    color: #0ea5e9;
     font-weight: 600;
 }
 
-/* -----------------------
-   RESPONSIVE
------------------------ */
-
-@media (max-width: 992px) {
-    .testimonials-container {
-        grid-template-columns: 1fr 1fr;   /* 2 cards on tablet */
+/* Responsive */
+@media (max-width: 900px) {
+    .students-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 600px) {
-    .testimonials-container {
-        grid-template-columns: 1fr;       /* 1 card on mobile */
+    .students-grid {
+        grid-template-columns: 1fr;
     }
 
-    .section-title {
-        text-align: center;
-        font-size: 2rem;
+    .students-img {
+        height: 200px;
     }
 }
+
 
 
 
 
 /* ------------------ ALUMNI SECTION ------------------ */
-
-.alumni-section {
-    padding: 50px 20px;
-    width: 100%;
-    text-align: left;
-}
 
 .alumni-subtitle {
     margin-left: 1rem;
