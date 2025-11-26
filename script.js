@@ -12,7 +12,6 @@ document.querySelectorAll('.dropdown-item, .nav-link').forEach(link => {
     });
 });
 
-
 // FIX: Slider animation restart on resize
 window.addEventListener("resize", () => {
     const slider = document.querySelector(".slides");
@@ -24,8 +23,6 @@ window.addEventListener("resize", () => {
         }, 50);
     }
 });
-
-
 
 // navbar dropdown
 document.querySelectorAll(".nav-item.dropdown").forEach(function(drop){
@@ -39,8 +36,6 @@ document.querySelectorAll(".nav-item.dropdown").forEach(function(drop){
         if (menu) menu.classList.remove("show");
     });
 });
-
-
 
 closeModal.onclick = () => modal.style.display = "none";
 modal.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
