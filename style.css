@@ -47,10 +47,41 @@
     background-color: #f1f1f1;
 }
 
+
+/* ===========================================
+            ABOUT US PAGE STYLING
+=========================================== */
+
+.about-section {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    line-height: 1.8;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #004b73;
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
 /* Placement Section Styling */
         .placement-section {
-            width: 80rem;
-            height: 28rem;
+            max-width: 500rem;
+            height: 31rem;
             margin: 40px auto;
             padding: 40px;
             border-radius: 15px;
@@ -109,7 +140,7 @@
         /* Image size + center */
         .swiper-slide img {
             width: 40rem;
-            height: 15rem;
+            height: 20rem;
             object-fit: cover;
             border-radius: 12px;
             display: block;
@@ -176,458 +207,6 @@
             }
         }
 
-
-/* ===========================================
-            ABOUT US PAGE STYLING
-=========================================== */
-
-.about-section {
-    padding-top: 120px;
-    padding-bottom: 40px;
-    line-height: 1.8;
-}
-
-.section-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #004b73;
-}
-
-.sub-title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 25px;
-    color: #333;
-}
-
-.about-section p {
-    font-size: 17px;
-    color: #444;
-    margin-bottom: 15px;
-}
-
-/* Pharmacy Graduate Section */
-.hero-section {
-    padding: 80px 10%;
-    background: #ffffff; 
-    /* margin-left: 3rem; */
-}
-
-.hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-/* LEFT SIDE */
-.hero-left {
-    flex: 1;
-}
-
-.badge-row {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 18px;
-}
-
-.badge {
-    padding: 8px 16px;
-    background: #e8faff;
-    color: #0088aa;
-    font-size: 14px;
-    border-radius: 20px;
-    font-weight: 600;
-}
-
-.hero-title {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1.2;
-    color: #0b1b3d;
-    margin-bottom: 20px;
-}
-
-.hero-title span {
-    color: #ffb84d;   /* Yellow like screenshot */
-}
-
-.hero-subtext {
-    font-size: 17px;
-    color: #444;
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
-
-/* BUTTONS */
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.btn-primary {
-    padding: 12px 22px;
-    background: #00a2e8;
-    color: #fff;
-    border-radius: 25px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.btn-outline {
-    padding: 12px 22px;
-    border-radius: 25px;
-    border: 2px solid #00a2e8;
-    color: #00a2e8;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-/* TAGS */
-.tag-row {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.tag {
-    padding: 8px 16px;
-    background: #f4f4f6;
-    border-radius: 20px;
-    font-size: 14px;
-}
-
-/* RIGHT CARD */
-.hero-card {
-    flex: 0.8;
-    background: #f8feff;
-    padding: 35px;
-    border-radius: 25px;
-    box-shadow: 0px 8px 25px rgba(0,0,0,0.08);
-}
-
-.hero-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    color: #0b1b3d;
-}
-
-.hero-card ul {
-    margin-bottom: 20px;
-    padding-left: 18px;
-}
-
-.hero-card li {
-    margin-bottom: 8px;
-    color: #444;
-    font-size: 15px;
-}
-
-.card-btn {
-    display: inline-block;
-    background: #00a2e8;
-    padding: 12px 22px;
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-/* RESPONSIVE */
-@media (max-width: 992px) {
-    .hero-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .badge-row, .hero-buttons, .tag-row {
-        justify-content: center;
-    }
-
-    .hero-card {
-        width: 100%;
-    }
-
-    .hero-title {
-        font-size: 2.4rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-subtext {
-        font-size: 15px;
-    }
-}
-
-
-/* MAIN SECTION */
-.hero-simple {
-    padding: 80px 10%;
-    background: #ffffff;
-}
-
-/* FLEX WRAPPER */
-.hero-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 60px;
-}
-
-/* LEFT SIDE TEXT */
-.hero-left {
-    flex: 1;
-}
-
-.hero-title {
-    font-size: 3rem;
-    font-weight: 800;
-    color: #0b1b3d;
-    line-height: 1.15;
-    margin-bottom: 20px;
-}
-
-.hero-title span {
-    color: #ffb84d;
-}
-
-.hero-description {
-    font-size: 18px;
-    color: #444;
-    line-height: 1.7;
-    max-width: 600px;
-}
-
-/* RIGHT SIDE TEXT CARD */
-.hero-right {
-    flex: 0.8;
-    padding: 35px;
-    background: #f8feff;
-    border-radius: 20px;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
-}
-
-.right-title {
-    font-size: 1.5rem;
-    color: #0b1b3d;
-    margin-bottom: 15px;
-}
-
-.right-list {
-    padding-left: 18px;
-}
-
-.right-list li {
-    margin-bottom: 10px;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* RESPONSIVE */
-@media (max-width: 992px) {
-    .hero-wrapper {
-        flex-direction: column;
-    }
-
-    .hero-right {
-        width: 100%;
-    }
-
-    .hero-title {
-        font-size: 2.4rem;
-        text-align: center;
-    }
-
-    .hero-description {
-        text-align: center;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-right {
-        padding: 25px;
-    }
-}
-
-/* Cources Section */
-/* Section */
-.courses-section {
-    padding: 60px 10%;
-    background: #ffffff;
-}
-
-.courses-title {
-    font-size: 2.3rem;
-    font-weight: 700;
-    color: #0b1b3d;
-    margin-bottom: 10px;
-}
-
-.courses-subtitle {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 35px;
-}
-
-/* Grid */
-.courses-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-}
-
-/* Card */
-.course-card {
-    background: white;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
-}
-
-.course-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 15px 35px rgba(0,0,0,0.12);
-}
-
-/* Badge */
-.course-badge {
-    display: inline-block;
-    padding: 6px 14px;
-    background: #e9f2ff;
-    color: #2563eb;
-    font-size: 13px;
-    border-radius: 20px;
-    margin-bottom: 12px;
-}
-
-/* Title */
-.course-title {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-/* Description */
-.course-desc {
-    font-size: 14px;
-    color: #444;
-    line-height: 1.6;
-    margin-bottom: 18px;
-}
-
-/* Link */
-.course-link {
-    color: #0ea5e9;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.course-link:hover {
-    text-decoration: underline;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .courses-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Why Section */
-/* Outer section spacing */
-.why-section {
-    padding: 60px 10%;
-}
-
-/* Big main card */
-.why-main-card {
-    background: white;
-    padding: 40px;
-    border-radius: 22px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
-}
-
-/* Flex layout inside the main card */
-.why-inner {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-/* LEFT CONTENT */
-.why-left {
-    flex: 2;
-}
-
-.why-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 18px;
-}
-
-.why-list {
-    padding-left: 20px;
-}
-
-.why-list li {
-    margin-bottom: 12px;
-    font-size: 16px;
-    color: #444;
-    line-height: 1.6;
-}
-
-/* RIGHT SMALL BOX (INSIDE MAIN CARD) */
-.ideal-box {
-    flex: 1;
-    background: #f8fbff;
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0px 5px 18px rgba(0,0,0,0.06);
-    height: fit-content;
-}
-
-.ideal-box h3 {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.ideal-box ul {
-    padding-left: 20px;
-}
-
-.ideal-box ul li {
-    margin-bottom: 10px;
-    font-size: 15px;
-    color: #444;
-    line-height: 1.5;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .why-inner {
-        flex-direction: column;
-    }
-    
-    .ideal-box {
-        width: 100%;
-    }
-}
-
-
-
 /* ------------------ COMMON ------------------ */
 .section-title {
     font-size: 2.3rem;
@@ -642,93 +221,113 @@
 
 
 /* ------------------ TESTIMONIALS ------------------ */
-/* Section */
-.students-section {
-padding: 80px 10%;
-    background: #ffffff;
+
+/* ===========================
+/* ===========================
+   TESTIMONIALS SECTION
+=========================== */
+
+.testimonials-section {
+    padding: 60px 20px 80px;
+    background: white;
 }
 
-.students-title {
-    font-size: 2.2rem;
+.section-title {
+    font-size: 2.5rem;
     font-weight: 700;
-    color: #0b1b3d;
-    margin-bottom: 5px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 20px;
+}
+.section-title span {
+    color: #ff0066;
 }
 
-.students-subtitle {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 40px;
-}
-
-/* Grid */
-.students-grid {
+/* -----------------------
+   3 CARD GRID
+----------------------- */
+.testimonials-container {
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 25px;
 }
 
-/* Card */
-.students-card {
-    background: white;
+/* -----------------------
+   TESTIMONIAL CARD
+----------------------- */
+.testimonial-card {
+    background: #f3f3fc;
+    padding: 30px;
     border-radius: 20px;
-    padding: 20px 20px 30px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
-    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
     transition: .3s ease;
 }
-
-.students-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 15px 35px rgba(0,0,0,0.12);
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
 }
 
-/* Image */
-.students-img {
-    width: 100%;
-    height: 220px;
+/* Profile Image */
+.testimonial-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 16px;
     margin-bottom: 15px;
 }
 
+/* Review Text */
+.testimonial-text {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
 /* Name */
-.students-name {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 8px;
+.testimonial-name {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* Company */
-.students-company {
-    font-size: 15px;
-    color: #0ea5e9;
+.testimonial-company {
+    color: #ff0066;
+    font-size: 14px;
     font-weight: 600;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-    .students-grid {
-        grid-template-columns: 1fr 1fr;
+/* -----------------------
+   RESPONSIVE
+----------------------- */
+
+@media (max-width: 992px) {
+    .testimonials-container {
+        grid-template-columns: 1fr 1fr;   /* 2 cards on tablet */
     }
 }
 
 @media (max-width: 600px) {
-    .students-grid {
-        grid-template-columns: 1fr;
+    .testimonials-container {
+        grid-template-columns: 1fr;       /* 1 card on mobile */
     }
 
-    .students-img {
-        height: 200px;
+    .section-title {
+        text-align: center;
+        font-size: 2rem;
     }
 }
-
-
-
-
-
 /* ------------------ ALUMNI SECTION ------------------ */
+.alumni-section {
+    padding: 50px 20px;
+    width: 100%;
+    text-align: left;
+}
 
 .alumni-subtitle {
     margin-left: 1rem;
@@ -755,8 +354,6 @@ padding: 80px 10%;
     filter: grayscale(0%);
     transform: scale(1.05);
 }
-
-
 /* ------------- MOBILE RESPONSIVE -------------- */
 @media (max-width: 768px) {
     .section-title {
@@ -931,18 +528,31 @@ padding: 80px 10%;
     color: #000; /* Course is black */
 }
 
-.pink-text {
-    color: #ff007f; /* Overview in pink */
+.alumni-title {
+    white-space: nowrap;
+    color: inherit !important; /* prevents overriding */
 }
+
+.os-black {
+    color: #000000 !important;
+}
+
+.os-pink {
+    color: #ff1493 !important;  /* deep pink */
+}
+
+
+
 
 /* Our Aluminy Section CSS Code */
 .alumni-section {
     padding: 40px;
     text-align: center;
+    /* background-color: #000; */
 }
 
 .alumni-title {
-    font-size: 32px;
+    font-size: 35px;
     margin-bottom: 30px;
     color: #ff0080; /* pink title */
 }
@@ -954,15 +564,17 @@ padding: 80px 10%;
 }
 
 .alumni-card {
-    background: #fff;
+    background: #a04444;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-    transition: 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .alumni-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px) scale(1.05); /* lift + smooth zoom */
+    box-shadow: 0px 10px 25px rgba(255, 0, 128, 0.3); /* pink glow */
 }
 
 .alumni-card img {
@@ -1000,4 +612,289 @@ padding: 80px 10%;
 
 .alumni-title .pink {
     color: #ff0080; /* Alumni = pink */
+}
+
+/* Contact us page css code */
+
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+.contact-left img {
+    width: 450px;
+    height: 600px;
+    max-width: 100%;
+}
+
+.contact-right .map {
+    width: 600px;
+    height: 600px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 900px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-right .map {
+        width: 100%;
+        height: 350px;
+    }
+}
+/* Contact Info Section */
+.contact-info-section {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px 0;
+}
+
+/* Each Column */
+.contact-box {
+    background: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.contact-box h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.value {
+    font-size: 16px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.value i {
+    color: #ff5722;
+    margin-right: 6px;
+}
+
+.location-title {
+    font-size: 17px;
+    color: #ff5722;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.location-text {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.address {
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-info-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+/* -------------------------------------
+   COURSE OVERVIEW SECTION
+-------------------------------------- */
+
+.course-section {
+    padding: 50px 40px;
+    background: #fff;
+}
+
+/* HEADING */
+.course-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.course-title span {
+    background: linear-gradient(to right, #ff007f, #ff66cc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* CARDS CONTAINER */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* CARD */
+.course-card {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding-bottom: 25px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+}
+
+/* CARD IMAGE */
+.course-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* BADGES */
+.badge-box {
+    margin: 15px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.badge.offline {
+    background: #ffccd5;
+    color: #b30023;
+}
+
+.badge.online {
+    background: #ffe3c2;
+    color: #a96400;
+}
+
+/* TEXT */
+.course-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 15px;
+    margin-top: 8px;
+}
+
+.duration {
+    color: #666;
+    margin: 5px 15px;
+    font-weight: 600;
+}
+
+.desc {
+    color: #666;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+/* BUTTON */
+.details-btn {
+    width: 85%;
+    margin: 20px auto 0 auto;
+    display: block;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ff007f;
+    border: 2px solid #ff007f;
+    background: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.details-btn:hover {
+    background: #ff007f;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+    .course-title {
+        font-size: 38px;
+    }
+}
+/* Our student placed at section css */
+.alumni-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.alumni-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ff0080; /* pink title */
+}
+
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.alumni-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.alumni-card:hover {
+    transform: scale(1.05);
+}
+
+.alumni-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.alumni-card h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+.alumni-card p {
+    font-size: 14px;
+    color: #666;
 }
