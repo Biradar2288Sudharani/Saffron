@@ -1104,3 +1104,641 @@ padding: 80px 10%;
         flex-direction: column;
     }
 }
+
+
+/* Medical Writing page css */
+/* MAIN SECTION */
+.medical-course {
+    padding: 60px 10%;
+    background: #f4faff;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5rem;
+}
+
+/* HEADER */
+.course-header h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+.course-header span { color: #007bff; }
+.course-header p {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* HIGHLIGHT CARDS */
+/* Highlights Grid */
+.highlights-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+/* Highlight Card */
+.highlight-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.35s ease-in-out;
+    border: 1px solid #e8e8e8;
+}
+
+/* Hover Effect */
+.highlight-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+    border-color: #007bff;
+}
+
+/* Icons */
+.highlight-card i {
+    font-size: 42px;
+    color: #007bff;
+    margin-bottom: 12px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Icon Hover Animation */
+.highlight-card:hover i {
+    transform: scale(1.18) rotate(5deg);
+    color: #0054b6;
+}
+
+/* Text Styling */
+.highlight-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.highlight-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+
+/* MODULES GRID */
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+.module-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: .4s ease;
+}
+.module-card:hover {
+    transform: translateY(-8px);
+}
+
+/* UPDATED CTA SECTION */
+.updated-cta {
+    margin-top: 60px;
+    background: linear-gradient(135deg, #0054b6, #008cff);
+    padding: 50px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* CTA TITLE */
+.updated-cta .cta-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+/* SUBTEXT */
+.updated-cta .cta-subtext {
+    margin: 15px auto;
+    max-width: 750px;
+    font-size: 1.1rem;
+    color: #e6f1ff;
+}
+
+/* BENEFITS */
+.cta-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.15);
+    padding: 10px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+}
+.benefit-item:hover {
+    background: rgba(255,255,255,0.25);
+}
+.benefit-item i {
+    color: #ffe066;
+}
+
+/* CTA BUTTONS */
+.cta-buttons {
+    margin-top: 25px;
+}
+.cta-button {
+    padding: 12px 28px;
+    margin: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.cta-button.primary {
+    background: #ffe066;
+    color: #0054b6;
+}
+.cta-button.primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,224,102,0.8);
+}
+.cta-button.outline {
+    border: 2px solid white;
+    color: white;
+}
+.cta-button.outline:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.1);
+}
+
+
+/* pharmacovigliance Section css */
+
+/* =========================
+   PHARMACOVIGILANCE SECTION
+   ========================= */
+
+.pv-course {
+  padding: 60px 10%;
+  background: #f4f8ff;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5rem;
+}
+
+/* Header reused from earlier pattern */
+.pv-course .course-header h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: #102a43;
+}
+.pv-course .course-header span {
+  color: #007bff;
+}
+.pv-course .course-header p {
+  text-align: center;
+  max-width: 750px;
+  margin: 10px auto 0;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Highlights grid */
+.pv-highlights-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.pv-highlight-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+  transition: 0.35s ease;
+}
+
+.pv-highlight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+  border-color: #007bff;
+}
+
+.pv-highlight-card i {
+  font-size: 42px;
+  color: #007bff;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+
+.pv-highlight-card:hover i {
+  transform: scale(1.15) rotate(5deg);
+  color: #0054b6;
+}
+
+.pv-highlight-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.pv-highlight-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Modules (reusing previous pattern) */
+.pv-course .modules-section {
+  margin-top: 60px;
+}
+
+.pv-course .section-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #102a43;
+  margin-bottom: 35px;
+}
+
+.pv-course .modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.pv-course .module-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+  transition: 0.35s ease;
+}
+
+.pv-course .module-card:hover {
+  transform: translateY(-8px);
+  border-color: #007bff;
+}
+
+.pv-course .module-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.pv-course .module-card ul {
+  padding-left: 18px;
+}
+
+.pv-course .module-card ul li {
+  margin-bottom: 8px;
+  color: #4b5563;
+  line-height: 1.5;
+  font-size: 0.97rem;
+}
+
+/* Extra info section (who should enroll, career, format) */
+.pv-extra-section {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.pv-extra-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+  transition: 0.3s ease;
+}
+
+.pv-extra-card:hover {
+  transform: translateY(-6px);
+  border-color: #007bff;
+}
+
+.pv-extra-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.pv-extra-card ul {
+  padding-left: 18px;
+}
+
+.pv-extra-card ul li {
+  margin-bottom: 7px;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.pv-note {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* CTA / Learning outcomes */
+.pv-cta {
+  margin-top: 60px;
+  background: linear-gradient(135deg, #0054b6, #008cff);
+  padding: 45px;
+  border-radius: 20px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.35);
+}
+
+.pv-cta h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.pv-cta p {
+  max-width: 750px;
+  margin: 0 auto 20px auto;
+  font-size: 1.03rem;
+  color: #e5f0ff;
+}
+
+.pv-cta .outcome-list p {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 9px 18px;
+  border-radius: 12px;
+  margin: 6px auto;
+  width: fit-content;
+  font-size: 0.98rem;
+  backdrop-filter: blur(5px);
+}
+
+/* Smooth premium bounce animation */
+@keyframes softBounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-14px); }
+    100% { transform: translateY(0); }
+}
+
+/* Apply bounce to the inner wrapper */
+.cta-bounce-wrapper {
+    animation: softBounce 3s ease-in-out infinite;
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* CTA buttons */
+.pv-cta .cta-buttons {
+  margin-top: 22px;
+}
+
+.pv-cta .cta-button {
+  padding: 11px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 8px;
+  display: inline-block;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.pv-cta .cta-button.primary {
+  background: #ffe066;
+  color: #0054b6;
+}
+
+.pv-cta .cta-button.primary:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 22px rgba(255, 224, 102, 0.85);
+}
+
+.pv-cta .cta-button.outline {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.pv-cta .cta-button.outline:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: scale(1.08);
+}
+
+/* Simple animations (optional) */
+.fade-in   { animation: fadeIn 1s ease forwards; }
+.slide-left  { animation: slideLeft 1s ease forwards; }
+.slide-right { animation: slideRight 1s ease forwards; }
+.zoom-in     { animation: zoomIn 1.1s ease forwards; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+
+
+
+
+
+/* Clinical  Research  page Css *//* MAIN SECTION */
+.clinical-course {
+    padding: 60px 10%;
+    background: #f4faff;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5rem;
+}
+
+/* Header */
+.clinical-course .course-header h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 700;
+    color: #102a43;
+}
+.clinical-course .course-header span { color: #007bff; }
+
+.clinical-course .course-header p {
+    text-align: center;
+    max-width: 750px;
+    margin: 10px auto;
+    color: #4a5568;
+}
+
+/* Highlight Cards */
+.highlights-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.highlight-card {
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #e3e8ee;
+    box-shadow: 0 10px 25px rgba(15,23,42,0.07);
+    transition: 0.35s ease;
+}
+.highlight-card:hover {
+    transform: translateY(-12px);
+    border-color: #007bff;
+    box-shadow: 0 18px 30px rgba(0,0,0,0.15);
+}
+.highlight-card i {
+    font-size: 42px;
+    color: #007bff;
+    margin-bottom: 12px;
+}
+.highlight-card h3 { font-size: 1.2rem; font-weight: 600; }
+
+/* Modules */
+.modules-section { margin-top: 40px; }
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #102a43;
+    margin-bottom: 35px;
+}
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 25px;
+}
+.module-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #e3e8ee;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.35s ease;
+}
+.module-card:hover {
+    transform: translateY(-8px);
+    border-color: #007bff;
+}
+
+/* Detailed Syllabus */
+.clinical-detailed-section {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 26px;
+}
+
+
+
+.detail-card {
+    background: #fff;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #e3e8ee;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    transition: 0.3s ease;
+}
+.detail-card:hover {
+    transform: translateY(-6px);
+    border-color: #007bff;
+}
+.detail-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* CTA */
+.clinical-cta {
+    margin-top: 60px;
+    padding: 45px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0054b6, #008cff);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+.clinical-cta h2 {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+}
+.clinical-cta p {
+    max-width: 720px;
+    margin: 0 auto 18px auto;
+}
+.outcome-list p {
+    background: rgba(255,255,255,0.18);
+    padding: 8px 18px;
+    border-radius: 12px;
+    margin: 7px auto;
+    display: inline-block;
+}
+.cta-buttons {
+    margin-top: 25px;
+}
+.cta-button {
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s ease;
+}
+.cta-button.primary {
+    background: #ffe066;
+    color: #0054b6;
+}
+.cta-button.primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 18px rgba(255,224,102,.8);
+}
+.cta-button.outline {
+    border: 2px solid #fff;
+    color: white;
+}
+.cta-button.outline:hover {
+    background: rgba(255,255,255,.2);
+    transform: scale(1.1);
+}
+
+/* Animations */
+.fade-in { animation: fadeIn 1s ease; }
+.slide-left { animation: slideLeft 1s ease; }
+.slide-right { animation: slideRight 1s ease; }
+.slide-up { animation: slideUp 1s ease; }
+.zoom-in { animation: zoomIn 1.1s ease; }
+
+@keyframes fadeIn { from{opacity:0; transform:translateY(25px);} to{opacity:1; transform:translateY(0);} }
+@keyframes slideLeft { from{opacity:0; transform:translateX(-40px);} to{opacity:1; transform:translateX(0);} }
+@keyframes slideRight { from{opacity:0; transform:translateX(40px);} to{opacity:1; transform:translateX(0);} }
+@keyframes slideUp { from{opacity:0; transform:translateY(50px);} to{opacity:1; transform:translateY(0);} }
+@keyframes zoomIn { from{opacity:0; transform:scale(.85);} to{opacity:1; transform:scale(1);} }
